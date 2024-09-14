@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Mi Portafolio</h1>
+</header>
+
+<div class="container">
+    <div class="profile">
+        <img src="Imagenes/foto perfil.jpg" alt="Foto de Perfil">
+        <div class="bio">
+            <h2>Williams Reniery Zambrano Martinez </h2>
+            <p>Soy un desarrollador web con experiencia en la creación de aplicaciones web utilizando HTML, CSS, JavaScript, y tecnologías modernas de desarrollo. Me apasiona crear soluciones que combinen funcionalidad y diseño atractivo.</p>
+        </div>
+    </div>
+
+    <section class="tit">
+        <h3>Proyectos Realizados</h3>
+       
+        </section>
+
+        <div class="image-container">
+            <img src="Imagenes/icfw2.jpg" alt="Sistema Solar">
+            
+          </div>
+          <div class="image-container">
+            <img src="Imagenes/icfw.jpg" alt="Mineralogia">
+        </div>
+
+        
+
+    
+          
+</section>
+
+    <div class="contact-form">
+        <h3>Contacto</h3>
+        <p>Déjame un mensaje y te responderé lo antes posible.</p>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" name="email" placeholder="Tu email" required>
+            <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 Williams Zambrano - Todos los derechos reservados
+</footer>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        alert(`Gracias por tu mensaje, ${name}. Te contactare pronto a ${email}.`);
+        document.getElementById('contactForm').reset();
+    });
+</script>
+
+</body>
+</html>
